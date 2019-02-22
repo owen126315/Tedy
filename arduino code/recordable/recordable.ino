@@ -123,7 +123,7 @@ void record()
   if (nfc.tagPresent()) 
   { 
     mySerial.write(record_sound,sizeof(record_sound));
-    delay(500);
+    delay(800);
     mySerial.write(record_command,sizeof(record_command));
     while(digitalRead(2));
     mySerial.write(stop_record_command,sizeof(stop_record_command));
